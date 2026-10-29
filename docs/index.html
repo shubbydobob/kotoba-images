@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>sns-autopost — 한일 친구 대화</title>
+<style>
+  :root { --ink:#16213A; --soft:#3A4560; --muted:#5B6478; --accent:#C93A22; }
+  body { margin:0; padding:48px 20px; background:#fff; color:var(--ink);
+         font-family:system-ui,-apple-system,"Segoe UI","Noto Sans KR",sans-serif; line-height:1.7; }
+  main { max-width:720px; margin:0 auto; }
+  h1 { font-size:2rem; margin:0 0 4px; }
+  .sub { color:var(--muted); margin:0 0 32px; }
+  h2 { font-size:1.15rem; margin:36px 0 10px; }
+  ul { padding-left:1.2em; }
+  a { color:#2D63A6; }
+  footer { margin-top:48px; padding-top:20px; border-top:1px solid #D9DEE7;
+           color:var(--muted); font-size:.9rem; }
+  .badge { display:inline-block; background:var(--accent); color:#fff;
+           padding:4px 14px; border-radius:999px; font-size:.85rem; font-weight:700; }
+</style>
+</head>
+<body>
+<main>
+  <span class="badge">한일 친구 대화 · 日韓ともだち会話</span>
+  <h1>sns-autopost</h1>
+  <p class="sub">한국어·일본어 학습 카드를 만들어 SNS에 올리는 개인용 자동화 도구</p>
+
+  <h2>무엇을 하나요</h2>
+  <p>
+    일본 친구와 한국 친구가 각자의 언어로 대화하는 학습 카드를 데이터(YAML)로 작성하면,
+    이미지를 그려서 정해진 시각에 인스타그램 · 쓰레드에 올리고, 같은 내용으로 유튜브 쇼츠 영상을 만들어 올립니다.
+    말풍선마다 읽는 법과 번역이 붙습니다.
+  </p>
+
+  <h2>누가 쓰나요</h2>
+  <p>
+    운영자 본인 한 사람만 사용하는 개인 도구입니다. 회원가입이나 로그인 기능이 없고,
+    일반 이용자가 이 도구에 접속하거나 계정을 만들 수 없습니다.
+  </p>
+
+  <h2>Google 계정을 어떻게 쓰나요</h2>
+  <ul>
+    <li><b>YouTube Data API</b> — 운영자 본인 채널에 영상을 올리는 데만 씁니다 (<code>youtube.upload</code> 권한).</li>
+    <li><b>Cloud Text-to-Speech API</b> — 카드의 대사를 음성으로 바꿔 영상에 넣습니다.</li>
+  </ul>
+  <p>
+    다른 사람의 Google 계정 정보를 요청하거나 읽지 않습니다. 자세한 내용은
+    <a href="privacy.html">개인정보처리방침</a>을 봐 주세요.
+  </p>
+
+  <h2>링크</h2>
+  <ul>
+    <li><a href="privacy.html">개인정보처리방침</a></li>
+    <li><a href="terms.html">이용약관</a></li>
+    <li><a href="https://github.com/shubbydobob/sns-autopost">소스 코드 (GitHub)</a></li>
+  </ul>
+
+  <footer>
+    문의 <a href="mailto:shubbydobob@gmail.com">shubbydobob@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
