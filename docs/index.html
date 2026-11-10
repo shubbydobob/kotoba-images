@@ -32,6 +32,10 @@
   footer a { color:var(--soft) }
   .pending { background:#FFF6E8; border:2px dashed #E0B96A; border-radius:16px; padding:18px; text-align:center;
              font-size:15px; color:#7A5A16 }
+  .subs { display:flex; gap:10px; margin-bottom:6px }
+  .subs a { flex:1; text-align:center; background:#fff; border:2px solid var(--line); border-radius:14px;
+            padding:14px 8px; text-decoration:none; color:var(--ink); font-weight:700; font-size:15px }
+  .subs a:hover { border-color:var(--accent) }
 </style>
 </head>
 <body>
@@ -85,9 +89,15 @@
       '<a class="cta" href="' + window.FORM_URL + '">이메일 남기고 자료 받기</a>' +
       '<p class="note">받은 메일 주소는 새 자료가 나왔을 때만 씁니다. 언제든 그만 받을 수 있습니다.</p>';
   } else {
+    // 폼이 아직 없을 때: 바로 받게 한다.
+    // 바이오에 "준비 중" 페이지를 걸면 안 거느니만 못하다. 폼이 생기면 window.FORM_URL 한 줄로 바뀐다.
     el.innerHTML =
-      '<div class="pending">자료 받는 곳을 준비하고 있습니다.<br>' +
-      '그동안은 <a href="https://www.instagram.com/kotoba_mal/">@kotoba_mal</a> 에서 매일 올라옵니다.</div>';
+      '<a class="cta" href="anki.tsv" download>Anki 덱 받기 (228장)</a>' +
+      '<div class="subs">' +
+        '<a href="workbook.pdf">워크북 PDF (164쪽)</a>' +
+        '<a href="expressions.csv">표현 목록 CSV</a>' +
+      '</div>' +
+      '<p class="note">전부 무료입니다. 매일 새 표현이 쌓이고, 자료는 주 1회 갱신됩니다.</p>';
   }
 })();
 </script>
