@@ -3,103 +3,69 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>한일 친구 대화 — 무료 일본어 학습 자료</title>
-<meta name="description" content="매일 올리는 일본어 카드를 Anki 덱 228장과 워크북 PDF 164쪽으로 한 번에 받으세요.">
-<meta property="og:title" content="한일 친구 대화 — 무료 일본어 학습 자료">
-<meta property="og:description" content="Anki 덱 228장 · 워크북 PDF 164쪽. 이메일만 남기면 바로 받습니다.">
+<title>sns-autopost — 한일 친구 대화</title>
 <style>
-  :root { --ink:#1B2A41; --accent:#D7442B; --soft:#5B6B85; --line:#D9DEE7; }
-  * { box-sizing:border-box }
-  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;
-         color:var(--ink); background:#FBFCFE; line-height:1.65; }
-  .wrap { max-width:640px; margin:0 auto; padding:48px 20px 80px }
-  .badge { display:inline-block; background:var(--ink); color:#fff; font-size:13px; font-weight:700;
-           padding:6px 14px; border-radius:999px; letter-spacing:.3px }
-  h1 { font-size:34px; line-height:1.25; margin:18px 0 10px; letter-spacing:-.5px }
-  h1 em { font-style:normal; color:var(--accent) }
-  .lead { font-size:17px; color:var(--soft); margin:0 0 30px }
-  .card { background:#fff; border:2px solid var(--line); border-radius:20px; padding:24px 22px; margin:14px 0 }
-  .card h2 { font-size:19px; margin:0 0 6px }
-  .card p { margin:0; color:var(--soft); font-size:15px }
-  .num { font-size:40px; font-weight:900; color:var(--accent); line-height:1; margin-bottom:6px }
-  .cta { display:block; text-align:center; background:var(--accent); color:#fff; text-decoration:none;
-         font-size:18px; font-weight:800; padding:18px; border-radius:16px; margin:28px 0 10px }
-  .cta:hover { filter:brightness(.94) }
-  .note { font-size:13px; color:var(--soft); text-align:center; margin:0 0 36px }
-  .how { border-top:2px solid var(--line); padding-top:28px; margin-top:36px }
-  .how li { margin-bottom:10px; color:var(--soft) }
-  footer { margin-top:48px; font-size:13px; color:var(--soft); text-align:center }
-  footer a { color:var(--soft) }
-  .pending { background:#FFF6E8; border:2px dashed #E0B96A; border-radius:16px; padding:18px; text-align:center;
-             font-size:15px; color:#7A5A16 }
-  .subs { display:flex; gap:10px; margin-bottom:6px }
-  .subs a { flex:1; text-align:center; background:#fff; border:2px solid var(--line); border-radius:14px;
-            padding:14px 8px; text-decoration:none; color:var(--ink); font-weight:700; font-size:15px }
-  .subs a:hover { border-color:var(--accent) }
+  :root { --ink:#16213A; --soft:#3A4560; --muted:#5B6478; --accent:#C93A22; }
+  body { margin:0; padding:48px 20px; background:#fff; color:var(--ink);
+         font-family:system-ui,-apple-system,"Segoe UI","Noto Sans KR",sans-serif; line-height:1.7; }
+  main { max-width:720px; margin:0 auto; }
+  h1 { font-size:2rem; margin:0 0 4px; }
+  .sub { color:var(--muted); margin:0 0 32px; }
+  h2 { font-size:1.15rem; margin:36px 0 10px; }
+  ul { padding-left:1.2em; }
+  a { color:#2D63A6; }
+  footer { margin-top:48px; padding-top:20px; border-top:1px solid #D9DEE7;
+           color:var(--muted); font-size:.9rem; }
+  .badge { display:inline-block; background:var(--accent); color:#fff;
+           padding:4px 14px; border-radius:999px; font-size:.85rem; font-weight:700; }
 </style>
 </head>
 <body>
-<div class="wrap">
+<main>
   <span class="badge">한일 친구 대화 · 日韓ともだち会話</span>
-  <h1>매일 올린 일본어를<br><em>한 번에</em> 가져가세요</h1>
-  <p class="lead">단톡방 대화에서 뽑은 표현을 Anki 덱과 워크북으로 묶었습니다. 전부 무료입니다.</p>
+  <h1>sns-autopost</h1>
+  <p class="sub">한국어·일본어 학습 카드를 만들어 SNS에 올리는 개인용 자동화 도구</p>
 
-  <div class="card">
-    <div class="num">228</div>
-    <h2>Anki 덱</h2>
-    <p>앞면·뒷면·읽는 법·예문·설명·태그까지 채워진 카드 228장. 받아서 바로 불러오면 됩니다.</p>
-  </div>
+  <h2>무엇을 하나요</h2>
+  <p>
+    일본 친구와 한국 친구가 각자의 언어로 대화하는 학습 카드를 데이터(YAML)로 작성하면,
+    이미지를 그려서 정해진 시각에 인스타그램 · 쓰레드에 올리고, 같은 내용으로 유튜브 쇼츠 영상을 만들어 올립니다.
+    말풍선마다 읽는 법과 번역이 붙습니다.
+  </p>
 
-  <div class="card">
-    <div class="num">164</div>
-    <h2>워크북 PDF</h2>
-    <p>지금까지 올린 카드를 날짜 순서로 모은 164쪽. 인쇄해서 봐도 되고 태블릿으로 넘겨 봐도 됩니다.</p>
-  </div>
+  <h2>누가 쓰나요</h2>
+  <p>
+    이 <b>도구</b>는 운영자 본인 한 사람만 사용합니다. 회원가입이나 로그인 기능이 없고,
+    일반 이용자가 도구에 접속하거나 계정을 만들 수 없습니다.
+  </p>
+  <p>
+    다만 도구가 만든 <b>학습 자료를 내려받는 페이지</b>는 따로 있고 누구나 열 수 있습니다
+    (<a href="study/">학습 자료 받기</a>). 그 페이지에서는 새 자료 알림을 원하는 분의
+    <b>이메일 주소를 받을 수 있습니다</b> — 자세한 내용은
+    <a href="privacy.html">개인정보처리방침</a>에 적어 두었습니다.
+  </p>
 
-  <div class="card">
-    <div class="num">CSV</div>
-    <h2>표현 목록</h2>
-    <p>엑셀·구글 시트로 열어 내 단어장으로 다시 만들 수 있습니다.</p>
-  </div>
+  <h2>Google 계정을 어떻게 쓰나요</h2>
+  <ul>
+    <li><b>YouTube Data API</b> — 운영자 본인 채널에 영상을 올리는 데만 씁니다 (<code>youtube.upload</code> 권한).</li>
+    <li><b>Cloud Text-to-Speech API</b> — 카드의 대사를 음성으로 바꿔 영상에 넣습니다.</li>
+  </ul>
+  <p>
+    다른 사람의 Google 계정 정보를 요청하거나 읽지 않습니다. 자세한 내용은
+    <a href="privacy.html">개인정보처리방침</a>을 봐 주세요.
+  </p>
 
-  <!-- 받는 곳: 아래 FORM_URL 한 줄만 바꾸면 켜집니다 (.docs/assets.md) -->
-  <script>window.FORM_URL = "";</script>
-  <div id="cta"></div>
-
-  <div class="how">
-    <h2 style="font-size:17px;margin:0 0 12px">Anki 가 처음이라면</h2>
-    <ol>
-      <li>Anki 를 설치합니다 (컴퓨터·안드로이드 무료, 아이폰은 유료).</li>
-      <li>받은 <code>anki.tsv</code> 를 파일 → 가져오기 로 엽니다.</li>
-      <li>필드 구분을 <b>탭</b>, 첫 줄은 <b>필드 이름</b> 으로 둡니다.</li>
-    </ol>
-  </div>
+  <h2>링크</h2>
+  <ul>
+    <li><a href="study/">학습 자료 받기</a> — Anki 덱 · 워크북 PDF · 표현 목록</li>
+    <li><a href="privacy.html">개인정보처리방침</a></li>
+    <li><a href="terms.html">이용약관</a></li>
+    <li><a href="https://github.com/shubbydobob/sns-autopost">소스 코드 (GitHub)</a></li>
+  </ul>
 
   <footer>
-    인스타그램 · 쓰레드 <a href="https://www.instagram.com/kotoba_mal/">@kotoba_mal</a><br>
-    저녁 6:30 · 밤 9:00 · 밤 10:00 — 하루 세 마디씩 올립니다.
+    문의 <a href="mailto:shubbydobob@gmail.com">shubbydobob@gmail.com</a>
   </footer>
-</div>
-
-<script>
-(function () {
-  var el = document.getElementById('cta');
-  if (window.FORM_URL) {
-    el.innerHTML =
-      '<a class="cta" href="' + window.FORM_URL + '">이메일 남기고 자료 받기</a>' +
-      '<p class="note">받은 메일 주소는 새 자료가 나왔을 때만 씁니다. 언제든 그만 받을 수 있습니다.</p>';
-  } else {
-    // 폼이 아직 없을 때: 바로 받게 한다.
-    // 바이오에 "준비 중" 페이지를 걸면 안 거느니만 못하다. 폼이 생기면 window.FORM_URL 한 줄로 바뀐다.
-    el.innerHTML =
-      '<a class="cta" href="anki.tsv" download>Anki 덱 받기 (228장)</a>' +
-      '<div class="subs">' +
-        '<a href="workbook.pdf">워크북 PDF (164쪽)</a>' +
-        '<a href="expressions.csv">표현 목록 CSV</a>' +
-      '</div>' +
-      '<p class="note">전부 무료입니다. 매일 새 표현이 쌓이고, 자료는 주 1회 갱신됩니다.</p>';
-  }
-})();
-</script>
+</main>
 </body>
 </html>

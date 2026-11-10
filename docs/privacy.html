@@ -14,6 +14,9 @@
   h2 { font-size:1.1rem; margin:32px 0 8px; }
   ul { padding-left:1.2em; }
   a { color:#2D63A6; }
+  table { border-collapse:collapse; width:100%; margin:12px 0 }
+  th, td { border:1px solid #D9DEE7; padding:10px 12px; text-align:left; vertical-align:top; font-size:.95rem }
+  th { background:#F6F8FB; white-space:nowrap; width:7.5em; font-weight:700 }
   .en { margin-top:40px; padding-top:24px; border-top:1px solid #D9DEE7; color:var(--muted); font-size:.92rem; }
   footer { margin-top:40px; padding-top:20px; border-top:1px solid #D9DEE7; color:var(--muted); font-size:.9rem; }
 </style>
@@ -21,7 +24,7 @@
 <body>
 <main>
   <h1>개인정보처리방침</h1>
-  <p class="sub">sns-autopost · 마지막 수정 2026년 10월 30일</p>
+  <p class="sub">sns-autopost · 마지막 수정 2026년 11월 10일</p>
 
   <h2>1. 이 도구의 성격</h2>
   <p>
@@ -31,8 +34,23 @@
 
   <h2>2. 수집하는 정보</h2>
   <p>
-    <b>이 도구는 이용자로부터 어떠한 개인정보도 수집하지 않습니다.</b>
+    <b>이 도구(sns-autopost)는 이용자로부터 어떠한 개인정보도 수집하지 않습니다.</b>
     방문자 분석 도구, 쿠키, 광고 추적을 사용하지 않습니다.
+  </p>
+  <p>
+    다만 <a href="study/">학습 자료 받기</a> 페이지에서 <b>이용자가 직접 이메일 주소를 입력하는
+    경우에만</b> 그 주소를 받습니다. 입력하지 않아도 자료는 모두 받을 수 있습니다.
+  </p>
+  <table>
+    <tr><th>수집 항목</th><td>이메일 주소 (이용자가 직접 입력한 경우에 한함)</td></tr>
+    <tr><th>수집 목적</th><td>새 학습 자료가 나왔을 때 알림 메일 발송. 이 목적 외에는 쓰지 않습니다</td></tr>
+    <tr><th>보유 기간</th><td>수신 거부 요청 시 즉시 삭제. 그 전까지는 알림 발송 목적으로 보관합니다</td></tr>
+    <tr><th>처리 위탁</th><td>입력 양식과 응답 저장은 Google Forms를 사용합니다</td></tr>
+    <tr><th>거부할 권리</th><td>입력은 전적으로 선택입니다. 입력하지 않아도 자료 이용에 제한이 없습니다</td></tr>
+  </table>
+  <p>
+    받은 이메일 주소를 광고에 쓰거나, 다른 사람·다른 서비스에 넘기거나, 판매하지 않습니다.
+    삭제·열람·정정을 원하시면 아래 7번 문의 주소로 알려 주시면 즉시 처리합니다.
   </p>
 
   <h2>3. 접근하는 Google 사용자 데이터</h2>
@@ -72,12 +90,16 @@
 
   <div class="en">
     <b>Summary (English).</b> sns-autopost is a personal automation tool used by its sole operator to
-    publish language-learning cards to the operator's own social accounts. It collects no personal
-    information from any user, uses no cookies or analytics, and accesses only the operator's own
-    Google account via the <code>youtube.upload</code> scope, solely to upload videos to the operator's
-    own YouTube channel. Tokens are stored in encrypted GitHub Actions Secrets. No Google user data is
-    shared, sold, or used for advertising or AI model training. Use of Google user data complies with
-    the Limited Use requirements of the Google API Services User Data Policy.
+    publish language-learning cards to the operator's own social accounts. The tool itself collects no
+    personal information and uses no cookies or analytics. Separately, a public page offers the
+    generated study materials for download; visitors there may <i>optionally</i> submit an email
+    address (via Google Forms) to be notified of new materials. That address is used only for those
+    notifications, is never shared or sold, and is deleted on request — submitting it is not required
+    to download anything. The tool accesses only the operator's own Google account via the
+    <code>youtube.upload</code> scope, solely to upload videos to the operator's own YouTube channel.
+    Tokens are stored in encrypted GitHub Actions Secrets. No Google user data is shared, sold, or used
+    for advertising or AI model training. Use of Google user data complies with the Limited Use
+    requirements of the Google API Services User Data Policy.
     Contact: shubbydobob@gmail.com
   </div>
 
